@@ -1,0 +1,26 @@
+{
+  "name": "example",
+  "version": "0.0.1",
+  "description": "example",
+  "scripts": {
+    "build": "rimraf ./dist && node .scripts/build.js",
+    "build:watch": "npm run build",
+    "build:sam": "rimraf ./.aws-sam && sam build"
+  },
+  "dependencies": {
+    "zod": "~3.21.4",
+    "@aws-sdk/client-dynamodb": "~3.316.0",
+    "uuid": "~9.0.0",
+    "dynamoose": "~3.2.0",
+    "@aws-sdk/client-eventbridge": "~3.316.0"
+  },
+  "devDependencies": {
+    "typescript": "~5.0.4",
+    "@types/node": "~18.15.11",
+    "@types/aws-lambda": "~8.10.114",
+    "esbuild": "~0.17.17",
+    "tiny-glob": "~0.2.9",
+    "rimraf": "~5.0.0",
+    "@types/uuid": "~9.0.1"
+  }
+}
